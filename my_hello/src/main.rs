@@ -9,9 +9,24 @@ fn main() {
     // Variaveis e Constantes em Rust
 
     let trabalhou : u32 = 30;
-    println!("Trabalhou {} horas", trabalhou);
+    println!("\nTrabalhou {} horas\n", trabalhou);
 
     let total_em_segundos : u32 = trabalhou * SECONDS_IN_HOUR;
-    println!("Trabalhou {} segundos", total_em_segundos);
+    println!("Trabalhou {} segundos\n", total_em_segundos);  
 
+    // Tipos Primitivos s
+
+    let a : i32 = -5;
+    let b : u32 = 10;
+    let c : f32 = 3.14;
+    let d : char = 'a';
+
+    println!("Tipos primitivos simples:\n - inteiros: {} \n - inteiros positivos: {} \n - pontos flutuantes: {}\n - caracter: {}\n", a, b, c, d);
+
+    // compostos 
+    let tupla = (1, 3.14, false, 'B');
+
+    let vetor = [1,2,3,4,5];
+
+    println!("Tipos primitivos compostos:\n- Tupla: {:?} \n- Matriz: {:?} \n", tupla, vetor);
 }
