@@ -4,7 +4,7 @@ Projetos de aprendizagem da linguagem Rust
 ---
 ## Gerenciamento de memória em Rust
 
-| CONTENTS                                             | SIZE              | LIFETIME             | CLEANUP                       |
+| AREA   | CONTENTS                                    | SIZE              | LIFETIME             | CLEANUP                       |
 |------------------------------------------------------|-------------------|----------------------|-------------------------------|
 | Static | - Binário do programa                       | Fixo              | Programa completo    | Quando o programa terminar    |
 |        | - Variáveis Static                          |                   |                      |                               |
