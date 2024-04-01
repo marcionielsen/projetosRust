@@ -5,7 +5,7 @@ Projetos de aprendizagem da linguagem Rust
 
 
 | CONTENTS                                             | SIZE              | LIFETIME             | CLEANUP                       |
-|------------------------------------------------------|-------------------|----------------------|-------------------------------|
+|---|---|---|---|
 |        |                                             |                   |                      |                               |
 | Static | - Binário do programa                       | Fixo              | Programa completo    | Quando o programa terminar    |
 |        | - Variáveis Static                          |                   |                      |                               |
