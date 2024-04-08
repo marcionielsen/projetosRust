@@ -1,3 +1,4 @@
+use std::io;
 
 const SECOND_IN_MINUTES : u32 = 60;
 const MINUTES_IN_HOUR : u32 = 60;
@@ -11,6 +12,9 @@ fn main() {
 
     // Tipos Primitivos 
     tipos_primiticos();
+
+    // Textos e caracteres
+    textos_caracteres();
 
     // Gerenciamento de memória em Rust
 
@@ -43,7 +47,39 @@ fn main() {
     // +--------------------++-----------------------------------------------------+-------------------+----------------------+-------------------------------+
     
 
+}
 
+fn textos_caracteres() {
+
+    // Exemplo de uso de String dinâmica
+    let mut s = String::new();
+
+    println!("=======[ Exemplo de uso de String dinâmica ]=======");
+    println!("Digite um texto: ");
+    io::stdin().read_line(&mut s).expect(" ***[ERROR]*** >  Error reading console!");
+
+    println!("\nVocê digitou ==>> {}", s);
+    
+    // String Heap ou String Dinâmica ou somente String ou String owned
+    let meu_nome = String::from("MÁRCIO");
+
+    println!("String Heap ou String Dinâmica ou somente String ou String owned => {}\n", meu_nome);
+    
+    // str slice ou str reference
+    let nome : &str = "Márcio";  
+
+    println!("str slice ou str reference => {}\n", nome);
+
+    // Concatenação de caracteres
+    let l0 = 'M';
+    let l1 = 'a';
+    let l2 = 'r';
+    let l3 = 'c';
+    let l4 = 'i';
+    let l5 = 'o';
+    let l6 = '\n';
+
+    println!("Concatenação de caracteres => {l0}{l1}{l2}{l3}{l4}{l5}{l6}"); 
 
 }
 
