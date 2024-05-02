@@ -1,10 +1,13 @@
 mod utils;
 mod domain;
 mod repository;
+mod builders;
 
 use postgres::SimpleQueryMessage::{Row, CommandComplete};
 
-use crate::{repository::manager_db::ManagerDb, utils::{functions_dao::{excute_simple_query, imprimir_cabec, imprimir_result_set, separador}, queries::SQL}};
+use utils::functions_dao::{imprimir_cabec, imprimir_result_set, separador, excute_simple_query};
+
+use crate::{repository::manager_db::ManagerDb, utils::queries::SQL};
 
 fn main() {
 
@@ -15,6 +18,8 @@ fn main() {
     let mut client = md.db_conn;
 
     println!(">>>Executando query...\n");
+
+    // Repository::all_produtos();
 
     let query_result = excute_simple_query(&mut client, SQL);
 
